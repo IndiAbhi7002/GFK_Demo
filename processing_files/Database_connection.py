@@ -386,14 +386,14 @@ def batch_insert_detections_to_db(detection: dict) -> int:
             old_content_detections  = list(detection.get("old_content", []))
             old_platform_detections = list(detection.get("old_platform", []))
             youtube_detections      = list(detection.get("youtube", []))
-            phash_detections        = list(detection.get("phash", []))
+            # phash_detections        = list(detection.get("phash", []))
 
             # Determine DB type
             all_scores = [score for _, score in (
                 channel_detections + ad_detections +
                 new_platform_detections + new_content_detections +
-                old_content_detections + old_platform_detections+ocr_detections+youtube_detections+ phash_detections
-            )]
+                old_content_detections + old_platform_detections+ocr_detections+youtube_detections
+            )]#+ phash_detections
 
             max_score = round(max(all_scores), 2) if all_scores else 0.0
             DB_TYPE = 29 if all_scores else 33
@@ -433,8 +433,8 @@ def batch_insert_detections_to_db(detection: dict) -> int:
             # === Insert EventContent (new_content + old_content) ===
             content_records = [
                 (event_id, name, round(score, 2))
-                for name, score in new_content_detections + old_content_detections+ phash_detections
-            ]
+                for name, score in new_content_detections + old_content_detections
+            ]#+ phash_detections
             if content_records:
                 cur.executemany("""
                     INSERT INTO "EventContent" (event_id, name, score)

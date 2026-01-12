@@ -349,10 +349,10 @@ def save_processed_image_and_store_db(frame: np.ndarray, metadata: dict, detecti
     old_content_detections = detections.get('old_content', [])
     old_platform_detections = detections.get('old_platform', [])
     youtube_detections = detections.get('youtube', [])
-    phash_detections = detections.get('phash', [])
+    # phash_detections = detections.get('phash', [])
     # has_detections = bool(ocr_detections or channel_detections or ad_detections or new_platform_detections or new_content_detections or old_content_detections or old_platform_detections)
 
-    has_detections = bool(channel_detections or phash_detections or youtube_detections or ad_detections or new_platform_detections or new_content_detections or old_content_detections or old_platform_detections)
+    has_detections = bool(channel_detections  or youtube_detections or ad_detections or new_platform_detections or new_content_detections or old_content_detections or old_platform_detections)#phash_detections
 
     # has_detections = bool(channel_detections or ad_detections)
 
@@ -395,9 +395,9 @@ def save_processed_image_and_store_db(frame: np.ndarray, metadata: dict, detecti
                     'old_content': old_content_detections,
                     'old_platform': old_platform_detections,
                     'youtube': youtube_detections,
-                    'phash': phash_detections,
+               
                     'image_path': s3_key
-                }
+                }     # 'phash': phash_detections,
 
                 if DATA_BASE == "postgres":
                     inserted_count = batch_insert_detections_to_db(record)
@@ -450,7 +450,7 @@ def process_image_pipeline(frame: np.ndarray, metadata: dict, DATA_BASE: str) ->
         old_content_detections, old_platform_detections = detect_old_content(frame.copy())
         new_platform_detections, new_ads_detections, new_content_detections = detect_new_content(frame.copy())
         youtube_detections = youtube_detection(frame.copy())
-        phash_detections = phash_detection(frame.copy())
+        # phash_detections = phash_detection(frame.copy())
         ocr_detections = [("", 0.0)]
 
         # Create a unified annotated frame
@@ -488,7 +488,7 @@ def process_image_pipeline(frame: np.ndarray, metadata: dict, DATA_BASE: str) ->
             'old_content': [(d['label'], d['confidence']) for d in old_content_detections],
             'old_platform': [(d['label'], d['confidence']) for d in old_platform_detections],
             'youtube': [(d['label'], d['confidence']) for d in youtube_detections],
-             'phash': phash_detections}
+            }#'phash': phash_detections
         # print(f"detections : {detections}")
         save_result = save_processed_image_and_store_db(processed_frame, metadata, detections, original_size, DATA_BASE)
 
