@@ -52,7 +52,7 @@ def init_worker():
     old_model_content_model = YOLO(old_model_content_path).to('cuda' if torch.cuda.is_available() else 'cpu')
     new_model_blg_demo = YOLO(new_model_blg_demo_path).to('cuda' if torch.cuda.is_available() else 'cpu')
     youtube_model = YOLO(youtube_model_path).to('cuda' if torch.cuda.is_available() else 'cpu')
-    phash_model = np.load(phash_dataset_path, allow_pickle=True).item()
+    # phash_model = np.load(phash_dataset_path, allow_pickle=True).item()
 
     try:
         signal.signal(signal.SIGINT, signal.SIG_IGN)

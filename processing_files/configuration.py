@@ -23,17 +23,28 @@ OUTPUT_IMAGE_SIZE = (640, 640)   # (width, height)
 OUTPUT_IMAGE_QUALITY = 30
 
 
-OLD_MODEL_TV_OTT_YT_LIST= ['Zee5','Sony_liv','Sun_Nxt','Hoichoi','JioHotstar','IshowSpeed','MxPlayer','Technical_Guruji','AmazonPrime','Netflix','Erosnow','ABPNews','DDNational','IndiaTV','NDTV','NewsIndia','SansadTV','TImesNowNB','RepublicWorld','ZeeNews','Saregama','Sony_music','Tips_Official','T-Series','AdityaMusic','AnandAudio','ZeeMusic','Dangal','SonySab','Star_pravah','StarPlus', 'Goldmines','Colors','ZeeMarathi','ZeeTV','SunMarathi','Star_Sports1_Hindi', 'TV9_Marathi', 'ALTT','MTV']
+OLD_MODEL_TV_OTT_YT_LIST= ['Zee5','JioHotstar','MxPlayer','AmazonPrime','Netflix','DDNational','IndiaTV','NDTV','NewsIndia','SansadTV','TImesNowNB','RepublicWorld','Saregama','Sony_music','Tips_Official','T-Series','AdityaMusic','AnandAudio','ZeeMusic','Dangal','SonySab','Star_pravah','StarPlus', 'Goldmines','Colors','ZeeMarathi','ZeeTV','SunMarathi','Star_Sports1_Hindi', 'TV9_Marathi']
 
-OLD_MODEL_CONTENT_LIST= ['Crime_Beat','Khoj','Murshid','Pyaar_Testing ','Vitromates','BadaNaamKarenge','Celebrity_MasterChef_India','Cubicles','Shark_Tank_India','Waking_of_Nation','IshqJabaria','Julali_Gaath_Ga','Nandinika_Pratishodh',
- 'Sawali_Hoin_Sukhachi','Shambhavi','Metro_Park','Aisa_Waisa_Pyaar','Hindmata','Date_Gone_Wrong','Modi','Dainee','Bishohori','Eken_Babu ','Nikhoj',
- 'Feludar_Goyendagiri','DareDevil','The_Pitt','The_Secret_Of_Shiledars','Laughter_Chefs_Unlimited_Entertainment','Virat@18','The_Wheel_Of_Time','Reacher',
- 'House_Of_David','Ziddi_Girls','Aashram ','School_Friends','PyarKa_Professor','Chidiya_Udd','Smile_To_Life','American_Murder_Gabby_Petito','Cassandra ','Black_Warrant','Dabba_Cartel','Squid_Game',
-]#'Lust_Party','Utha_Patak','Jawani_Janeman','Namkeen_Kisse','DhakDhak'
+# OLD_MODEL_TV_OTT_YT_LIST_1= ['Zee5','Sony_liv','Sun_Nxt','Hoichoi','JioHotstar','IshowSpeed','MxPlayer','Technical_Guruji','AmazonPrime','Netflix','Erosnow','ABPNews','DDNational','IndiaTV','NDTV','NewsIndia','SansadTV','TImesNowNB','RepublicWorld','ZeeNews','Saregama','Sony_music','Tips_Official','T-Series','AdityaMusic','AnandAudio','ZeeMusic','Dangal','SonySab','Star_pravah','StarPlus', 'Goldmines','Colors','ZeeMarathi','ZeeTV','SunMarathi','Star_Sports1_Hindi', 'TV9_Marathi', 'ALTT','MTV']
+
+
+OLD_MODEL_CONTENT_LIST= ['Khoj','Aashram ','School_Friends','PyarKa_Professor','Chidiya_Udd','Smile_To_Life','American_Murder_Gabby_Petito','Cassandra ','Squid_Game']#'Lust_Party','Utha_Patak','Jawani_Janeman','Namkeen_Kisse','DhakDhak'
+
+
+# OLD_MODEL_CONTENT_LIST_1= ['Crime_Beat','Khoj','Murshid','Pyaar_Testing ','Vitromates','BadaNaamKarenge','Celebrity_MasterChef_India','Cubicles','Shark_Tank_India','Waking_of_Nation','IshqJabaria','Julali_Gaath_Ga','Nandinika_Pratishodh',
+#  'Sawali_Hoin_Sukhachi','Shambhavi','Metro_Park','Aisa_Waisa_Pyaar','Hindmata','Date_Gone_Wrong','Modi','Dainee','Bishohori','Eken_Babu ','Nikhoj',
+#  'Feludar_Goyendagiri','DareDevil','The_Pitt','The_Secret_Of_Shiledars','Laughter_Chefs_Unlimited_Entertainment','Virat@18','The_Wheel_Of_Time','Reacher',
+#  'House_Of_David','Ziddi_Girls','Aashram ','School_Friends','PyarKa_Professor','Chidiya_Udd','Smile_To_Life','American_Murder_Gabby_Petito','Cassandra ','Black_Warrant','Dabba_Cartel','Squid_Game',
+# ]#'Lust_Party','Utha_Patak','Jawani_Janeman','Namkeen_Kisse','DhakDhak'
+
+
 
 YT_MODEL_LIST = ["YouTube"]
 
-OLD_MODEL_EXCLUDE_LIST =['Dettol','5star','Asianpaints','Glow&Lovely','Goodknight','Zee5','Sony_liv','Sun_Nxt','Hoichoi','JioHotstar','IshowSpeed','MxPlayer','Technical_Guruji','AmazonPrime','Netflix','Erosnow','ABPNews','DDNational','IndiaTV','NDTV','NewsIndia','SansadTV','TImesNowNB','RepublicWorld','ZeeNews','Saregama','Sony_music','Tips_Official','T-Series','AdityaMusic','AnandAudio','ZeeMusic','Dangal','SonySab','Star_pravah','StarPlus', 'Goldmines','Colors','ZeeMarathi','ZeeTV','SunMarathi','Star_Sports1_Hindi', 'TV9_Marathi', 'ALTT','MTV']
+OLD_MODEL_EXCLUDE_LIST =['Zee5','Sony_liv','Sun_Nxt','Hoichoi','JioHotstar','IshowSpeed','MxPlayer','Technical_Guruji','AmazonPrime','Netflix','Erosnow','ABPNews','DDNational','IndiaTV','NDTV','NewsIndia','SansadTV','TImesNowNB','RepublicWorld','ZeeNews','Saregama','Sony_music','Tips_Official','T-Series','AdityaMusic','AnandAudio','ZeeMusic','Dangal','SonySab','Star_pravah','StarPlus', 'Goldmines','Colors','ZeeMarathi','ZeeTV','SunMarathi','Star_Sports1_Hindi', 'TV9_Marathi', 'ALTT','MTV']
+
+# OLD_MODEL_EXCLUDE_LIST_1 =['Dettol','5star','Asianpaints','Glow&Lovely','Goodknight','Zee5','Sony_liv','Sun_Nxt','Hoichoi','JioHotstar','IshowSpeed','MxPlayer','Technical_Guruji','AmazonPrime','Netflix','Erosnow','ABPNews','DDNational','IndiaTV','NDTV','NewsIndia','SansadTV','TImesNowNB','RepublicWorld','ZeeNews','Saregama','Sony_music','Tips_Official','T-Series','AdityaMusic','AnandAudio','ZeeMusic','Dangal','SonySab','Star_pravah','StarPlus', 'Goldmines','Colors','ZeeMarathi','ZeeTV','SunMarathi','Star_Sports1_Hindi', 'TV9_Marathi', 'ALTT','MTV']
+
 
 PLATFORM_LIST = ['Amazon Prime','Zee5','Netflix','Amazon Originals']
 
@@ -43,8 +54,19 @@ CONTENT_LIST = ['Panchayat','Panchayat S2 E1','Panchayat S2 E2','Panchayat S2 E3
 'Bhool Chuk Maaf','Kadak Singh','Squid Game','Squid Game S3 E1','Squid Game S3 E2','Squid Game S3 E3','Squid Game S3 E4','Squid Game S3 E5','Squid Game S3 E6'
 ]
 
+
+CONTENT_LIST_1 = ['Panchayat','Panchayat S2 E1','Panchayat S2 E2','Panchayat S2 E3','Panchayat S2 E4','Panchayat S2 E5','Panchayat S2 E6','Panchayat S2 E7','Panchayat S2 E8','Panchayat S1 E1','Panchayat S1 E2','Panchayat S1 E3','Panchayat S1 E4','Panchayat S3 E1',
+'Panchayat S3 E2','Panchayat S3 E3','Panchayat S3 E4','Panchayat S3 E5','Panchayat S3 E6','Panchayat S3 E7','Panchayat S3 E8','Panchayat S4 E5','Panchayat S4 E6','Panchayat S4 E7','Panchayat S4 E8','Panchayat S4 E1',
+'Panchayat S4 E2','Panchayat S4 E3','Panchayat S4 E4','Panchayat S1 E5','Panchayat S1 E6','Panchayat S1 E7','Panchayat S1 E8','Khoj Parchaiyo Ke Uss Paar','Khoj S1 E1','Khoj S1 E2','Khoj S1 E3','Khoj S1 E4','Khoj S1 E5','Khoj S1 E6','Khoj S1 E7',
+'Bhool Chuk Maaf','Kadak Singh','Squid Game','Squid Game S3 E1','Squid Game S3 E2','Squid Game S3 E3','Squid Game S3 E4','Squid Game S3 E5','Squid Game S3 E6'
+]
+
+
 ADS_LIST = ['Cadbury Celebrations','Kelloggs Chocos','Policy Bazaar','Taco Bell','Apple Iphone 16 AI','Coach','Dabur honey','Dabur Red Paste','HP','Intel','Loreal Paris','Macho Hint','Mahindra','Nescafe Gold','Tata Harrier EV','WhatsApp','Kohler','Kelloggs','Scorpio N','Nescafe','Casting Creme Gloss'
 ]#'Dabur',,'Dabur Chyawanprash','Hajmola','Lite Horlicks',
+
+ADS_LIST_1 = ['Cadbury Celebrations','Kelloggs Chocos','Policy Bazaar','Taco Bell','Apple Iphone 16 AI','Coach','Dabur honey','Dabur Red Paste','HP','Intel','Loreal Paris','Macho Hint','Mahindra','Nescafe Gold','Tata Harrier EV','WhatsApp','Kohler','Kelloggs','Scorpio N','Nescafe','Casting Creme Gloss'
+]
 
 # === Database Configuration ===
 DB_HOST = "snapshot140825.c960kiumy09x.ap-south-1.rds.amazonaws.com"
